@@ -1,9 +1,7 @@
-FROM node
+FROM node:lts 
 
 WORKDIR /application
 
 COPY 2048-game .
-
-EXPOSE 8080
 
 CMD ["node", "server.js"]
